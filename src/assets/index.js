@@ -11,6 +11,7 @@ import star from './star.svg'
 import truckFast from './truck-fast.svg'
 import twitter from './twitter.svg'
 import eraLogo from './era-logo.png'
+import closeIcon from'./close-large-fill.svg'
 
 
 export {
@@ -26,5 +27,6 @@ export {
     star,
     truckFast,
     twitter,
-    eraLogo
+    eraLogo,
+    closeIcon,
 }

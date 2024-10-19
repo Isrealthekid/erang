@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar from './components/navbar/Navbar'
-import Hero from './components/hero/Hero'
-import About from './components/about/About'
-import Testimonials from './components/testimonials/Testimonials'
-import Team from './components/team/Team'
-import Cta from './components/cta/Cta'
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home/Home'
+import AboutUs from './pages/AboutUs/AboutUs'
+import Contact from './pages/Contact/Contact'
+import Blog from './pages/Blog/Blog'
 import Footer from './components/footer/Footer'
 
 function App() {
@@ -13,11 +13,14 @@ function App() {
   return (
     <>    
     <Navbar/>
-    <Hero/>
-    <About/>
-    <Testimonials/>
-    <Team/>
-    <Cta/>
+    <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/about' element={<AboutUs/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/blog' element={<Blog/>}/>
+        {/* <Route path='*' element={<NotFound/>}/>      */}
+      </Routes>    
+    
     <Footer/>
     </>
   )

@@ -1,63 +1,124 @@
-.nav{
-    /* height: max-content;
-    width: 100%; */
-    background-color: #FFFFFF;
-    backdrop-filter: blur(10px);
+.nav-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 1rem;
+
+    padding: 1rem 2rem;
 }
 
-.nav .logo{
+.logo {
+    height: 5rem;
+    width: 5rem;
+}
+
+.nav-links-container{
     display: flex;
     align-items: center;
-    height: 4rem;
-    width: 4rem;
 }
 
-.nav .logo img{
-    height: 100%;
-    width: 100%;
+.link{
+    padding:2rem 1rem;
+    
 }
 
-.nav-links .link {
-  padding:1rem 2rem;
-  border-radius: 1rem;
-  font-size: 1.2rem;
-  font-weight: 400;
-  transition: all 0.1s ease;
-
+.link > p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000000;
+    text-transform: capitalize;
 }
 
-.nav-links .link:hover{
-    background-color: #00DB5E;
+.link:hover{
+    cursor: pointer;
+    color: #004437;
 }
 
-.support-links .links {
+.hamburger-menu{
+    display: none;
+}
+
+
+.support-links{
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
 }
 
-.links div{
-    width: 2px;
+.support-links div{
+    
+    width: 1px;
     height: 2rem;
     background-color: #004437;
 }
 
-.support-links .links .link {
-    padding: 1rem 2rem;
-    border-radius: 1rem;
-    margin: 0.5rem;
+.support-links :hover{
+    cursor: pointer;
+    color: #004437;
 }
 
-.support-links .links .link:hover{
-    border: 1px solid #004437;
-    background-color: #00DB5E;
+@media screen and (max-width: 768px){
+    .nav-links-container{
+        display: none;
+    }
+
+    .hamburger-menu{
+        display: block;
+        cursor: pointer;
+    }
+
+    .support-links{
+        display: none;
+    }
+
+    .support-links div{
+        display: none;
+    }
+
+    .link{
+        padding: 1rem 0;
+    }
+
+    .hamburger-menu{
+        /* position: relative; */
+        /* display: block; */
+        /* z-index: 1; */
+        display: flex;
+                
+        
+    }
+
+    .hamburger-menu-links{
+      display: flex;
+      flex-direction: column;
+        position: absolute;
+        right: 2rem;
+        top: 5rem;
+        background-color: #00DB5E;
+        border: solid 1px #004437;
+        border-radius: 10px;
+        padding: 1rem 1rem;
+        backdrop-filter: blur(50px);
+    }
+
+    .hamburger-menu-links .link {
+        margin: 1rem 1rem;
+        padding: 0;
+        background-color: #00DB5E;
+        backdrop-filter: blur(50px);
+        
+    }
+
+    .hamburger-menu-links .link > p{
+       background-color: #00DB5E;
+       color: #ffffff;
+    }
+
+
 
 }
 
-.hamburger{
-    display: none;
+@media screen and (max-width: 550px){
+   
+
+
+    
 }

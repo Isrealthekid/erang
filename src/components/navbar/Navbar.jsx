@@ -1,36 +1,91 @@
 import React from 'react'
+import {NavLink,Link} from 'react-router-dom'
+import { useState } from 'react'
 import './Navbar.css' 
-import { hamburger,eraLogo } from '../../assets'
+import{RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import { eraLogo, } from '../../assets/index'
 
 const Navbar = () => {
+
+    const [hamburger, setHamburger] = useState(false)
+
   return (
-    <header>
-      <nav className='nav'>
-        <a className='logo' href="/">
-          <img src={eraLogo} alt='Logo' width={130} height={29}/>
-        </a>
-        <ul className='nav-links'>
-          <li className="links">
-            <a href="" className='link'>Home</a>
-            <a href="" className='link'>About</a>
-            <a href="" className='link'>Contact</a>
-            <a href="" className='link'>Blogs</a>            
-          </li>
-        </ul>
+    
+    <div className='nav-container' >
+      <img src={eraLogo} alt="logo"  className='logo'/>
 
-        <ul className="support-links">
-          <li className='links'>
-            <a href="" className='link'>Register</a>
-              <div></div>
-            <a href="" className='link'>Support</a>
-          </li>
-        </ul>
-        <div className='hamburger'>
-          <img src={ hamburger } alt="Hamburger" width={24} height={25} />
+      <ul className="nav-links-container">
+
+        <NavLink to='/' className="link">
+            <p>HOME</p>
+        </NavLink>
+
+        <NavLink to='/' className="link">
+            <p>HOME</p>
+        </NavLink>
+
+        <NavLink to='/' className="link">
+            <p>HOME</p>
+        </NavLink>
+
+        <NavLink to='/' className="link">
+            <p>HOME</p>
+        </NavLink>
+
+
+      </ul>
+
+      <div className="support-links">
+         <Link to='/support' className='link'>
+            <p className="">Support</p>
+          </Link>
+          <div></div>
+            
+          <Link to='/register' className='link'>
+            <p className="">Register</p>
+          </Link>
+
+          {/* <img onClick={()=>setHamburger(true)} src="" className='' /> */}
+      </div>
+
+    {/* sidebar/hamburger menu for small screen  */}
+
+      <div className="hamburger-menu">
+      {hamburger 
+        ? <RiCloseLine color="#fff" size={27}  onClick={() =>  setHamburger(false)}/>
+        : <RiMenu3Line color="#fff" size={27}  onClick={() =>  setHamburger(true)}/>
+
+      }
+
+      {hamburger && (
+        <div className="hamburger-menu-links">
+          <NavLink to='/' className="link" onClick={() =>  setHamburger(false)}>
+              <p>HOME</p>
+          </NavLink>
+
+          <NavLink to='/' className="link" onClick={() =>  setHamburger(false)}>
+              <p>HOME</p>
+          </NavLink>
+
+          <NavLink to='/' className="link" onClick={() =>  setHamburger(false)}>
+              <p>HOME</p>
+          </NavLink>
+
+          <NavLink to='/' className="link" onClick={() =>  setHamburger(false)}>
+              <p>HOME</p>
+          </NavLink>
         </div>
+      )
 
-      </nav>
-    </header>
+      }
+
+        
+      </div> 
+
+          
+   
+
+</div>
   )
 }
 

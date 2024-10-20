@@ -13,7 +13,8 @@ import twitter from './twitter.svg'
 import eraLogo from './era-logo.png'
 import closeIcon from'./close-large-fill.svg'
 import heroImage from   './african-american-woman-safety-helmet-working-near-model-building.jpg'
-
+import aboutImage from './hands-engineer-working-blueprint-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus.jpg'
+import aboutImage2 from './top-view-colleagues-working-desk.jpg'
 
 export {
     arrowRight,
@@ -31,4 +32,6 @@ export {
     eraLogo,
     closeIcon,
     heroImage,
+    aboutImage,
+    aboutImage2
 }

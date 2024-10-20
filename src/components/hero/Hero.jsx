@@ -13,7 +13,7 @@ const Hero = () => {
               <span> Training</span> <br /> and <span>Development</span>
             </h1>
             <h3>
-              Connecting Students to Real-World Engineering Experience             
+              Connecting Young Graduates to Real-World Engineering Experience             
             </h3>            
           </div>
           <button><a href="">Join Us Today</a></button>         

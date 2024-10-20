@@ -1,0 +1,95 @@
+
+.testimonials{
+    padding: 2rem 2rem;
+  }
+  
+  .testimonials-title{
+    margin-bottom:1rem;
+    /* font-size: 1.5rem;
+    font-weight: 700; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+  }
+
+  .testimonials-title > h3{
+    background: linear-gradient(90deg, rgba(0,68,55,1) 0%, rgba(0,109,66,1) 30%, rgba(0,219,94,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .testimonials-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 0 -1rem;
+    padding: 1rem 1rem;
+    /* padding-bottom: 2rem; */
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+  }
+  
+  .testimonials-item {
+    min-width: 40%;
+    
+    scroll-snap-align: center;
+    border: 1px solid ;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #00DB5E;
+   
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  
+  /* .testimonials-avatar-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: translate(15px, -25px);
+    background: var(--bg-gradient-onyx);
+    border-radius: 14px;
+    box-shadow: var(--shadow-1);
+  } */
+  
+  .testimonials-item-title{
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  
+  .testimonials-text{
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 120%;
+    display: -webkit-box;
+    line-clamp: 4;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  
+  @media screen and (max-width: 768px){
+    .testimonials-item {
+        min-width: 100%;
+        min-height: 156px;
+    }
+    
+    .testimonials-text{
+        color: #000000;
+        font-size: 0.8rem;
+        font-weight: 400;
+
+        line-clamp: 5;
+        -webkit-line-clamp: 5;
+    }
+      
+     
+}

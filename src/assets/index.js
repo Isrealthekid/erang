@@ -12,6 +12,7 @@ import truckFast from './truck-fast.svg'
 import twitter from './twitter.svg'
 import eraLogo from './era-logo.png'
 import closeIcon from'./close-large-fill.svg'
+import heroImage from   './african-american-woman-safety-helmet-working-near-model-building.jpg'
 
 
 export {
@@ -29,4 +30,5 @@ export {
     twitter,
     eraLogo,
     closeIcon,
+    heroImage,
 }

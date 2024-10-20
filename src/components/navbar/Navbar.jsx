@@ -20,28 +20,28 @@ const Navbar = () => {
             <p>HOME</p>
         </NavLink>
 
-        <NavLink to='/' className="link">
-            <p>HOME</p>
+        <NavLink to='/about' className="link">
+            <p>ABOUT</p>
         </NavLink>
 
-        <NavLink to='/' className="link">
-            <p>HOME</p>
+        <NavLink to='/contact' className="link">
+            <p>CONTACT</p>
         </NavLink>
 
-        <NavLink to='/' className="link">
-            <p>HOME</p>
+        <NavLink to='/blog' className="link">
+            <p>BLOG</p>
         </NavLink>
 
 
       </ul>
 
       <div className="support-links">
-         <Link to='/support' className='link'>
+         <Link to='/contact' className='link'>
             <p className="">Support</p>
           </Link>
           <div></div>
             
-          <Link to='/register' className='link'>
+          <Link to='/contact' className='link'>
             <p className="">Register</p>
           </Link>
 

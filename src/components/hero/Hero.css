@@ -1,0 +1,134 @@
+.hero-section{
+    display: flex;
+    padding: 1rem 0rem 1rem 2rem;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    gap: 1rem;
+    
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 1rem 0rem;
+}
+
+span{
+    /* color: #00DB5E; */
+
+    /* background: rgb(0,68,55); */
+    background: linear-gradient(90deg, rgba(0,68,55,1) 0%, rgba(0,109,66,1) 30%, rgba(0,219,94,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+button{
+    position: relative;
+    overflow: hidden;
+  
+  }
+  
+  button > a {
+    z-index: 9;
+    position: relative;
+    
+    
+  }
+  
+  button::after{
+    content: "";
+    position: absolute;
+    background: black;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: -100%;
+    transition: all ease 0.5s;
+    
+  }
+  
+  
+  button:hover > a{
+    color: white;
+  }
+  
+  button:hover::after{
+  bottom: 0;
+  }
+
+  
+
+img{
+    object-fit: cover;
+    width: 100%; 
+    height: 100%; 
+    /* position: relative;  */
+    
+}
+
+.hero-image{
+    object-fit: cover;
+    height: 50vh;
+    width: auto;    
+}
+
+.right-side{
+    max-height: 60vh;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width: 1050px){
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 2rem 1rem 2rem;        
+        gap: 2rem;
+        
+    }
+   
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 4rem;
+        font-weight: 700;
+        
+      }
+    
+      
+     
+}
+
+
+@media screen and (max-width: 450px){
+    .hero-section{
+        padding: 1rem 1rem;     
+        
+    }
+
+    h1{
+        font-size: 2.5rem;
+        font-weight: 700;
+      
+    }
+
+    h3{
+        font-size: 1.5rem;
+        font-weight: 500;
+       
+    }
+      
+    
+      
+     
+}

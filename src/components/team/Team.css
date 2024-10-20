@@ -1,0 +1,53 @@
+.team-section{
+    padding: 2rem 2rem;
+}
+
+.team-section-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+h3{
+    background: linear-gradient(90deg, rgba(0,68,55,1) 0%, rgba(0,109,66,1) 30%, rgba(0,219,94,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.team-container {
+    overflow: hidden;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+}
+
+.team-card{
+    min-width: 350px;
+    flex: 1;
+    position: relative;
+}
+
+.team-card > figure {
+   
+}
+
+.team-card > figure > img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.team-info{
+
+    position: absolute;
+    bottom: 0px;
+    left: -1px;
+    z-index: 2;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    border-radius: 0 20px 0 0;
+}

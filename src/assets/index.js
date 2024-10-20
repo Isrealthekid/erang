@@ -15,7 +15,8 @@ import closeIcon from'./close-large-fill.svg'
 import heroImage from   './african-american-woman-safety-helmet-working-near-model-building.jpg'
 import aboutImage from './hands-engineer-working-blueprint-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus.jpg'
 import aboutImage2 from './top-view-colleagues-working-desk.jpg'
-
+import maleEngineer from './view-male-engineer-work-engineers-day-celebration.jpg'
+import femaleEngineer from './portrait-person-working-construction-industry (1).jpg'
 export {
     arrowRight,
     cheveronRight,
@@ -33,5 +34,7 @@ export {
     closeIcon,
     heroImage,
     aboutImage,
-    aboutImage2
+    aboutImage2,
+    maleEngineer,
+    femaleEngineer
 }

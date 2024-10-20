@@ -64,15 +64,15 @@ const Navbar = () => {
           </NavLink>
 
           <NavLink to='/' className="link" onClick={() =>  setHamburger(false)}>
-              <p>HOME</p>
+              <p>ABOUT</p>
           </NavLink>
 
           <NavLink to='/' className="link" onClick={() =>  setHamburger(false)}>
-              <p>HOME</p>
+              <p>CONTACT</p>
           </NavLink>
 
           <NavLink to='/' className="link" onClick={() =>  setHamburger(false)}>
-              <p>HOME</p>
+              <p>BLOG</p>
           </NavLink>
         </div>
       )
